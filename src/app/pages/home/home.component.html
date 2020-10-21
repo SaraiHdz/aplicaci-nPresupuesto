@@ -1,87 +1,44 @@
 <div class="limiter animated fadeInLeft">
     <div class="container-login102">
-        <div class="wrap-login100">
-
-            <form (ngSubmit)=guardar(registroForm) #registroForm="ngForm" class="login100-form validate-form">
-                <span class="login100-form-title">
-						Registro de dispositivos
-				</span>
-
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" [(ngModel)]="dispositivo.marca" minlength="2" name="nombre" placeholder="Marca del dispositivo" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <i class="fa fa-tag" aria-hidden="true"></i>
-                    </span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Valid email is required: ex@abc.xyz">
-                    <input class="input100" type="text" [(ngModel)]="dispositivo.modelo" minlength="2" name="email" placeholder="Escriba el modelo" required email>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-                        <i class="fa fa-tag" aria-hidden="true"></i>
-                    </span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="number" name="pass" [(ngModel)]="dispositivo.numCamara" inlength="1" placeholder="Escriba cantidad de camaras" minlength="8" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-camera-retro" aria-hidden="true"></i>
-						</span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="number" name="pass" [(ngModel)]="dispositivo.almacenamiento" placeholder="Almacenamiento" minlength="8" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-database" aria-hidden="true"></i>
-						</span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="number" name="pass" [(ngModel)]="dispositivo.pantalla" placeholder="Tamaño de pantalla" minlength="8" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-expand" aria-hidden="true"></i>
-						</span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="number" name="pass" [(ngModel)]="dispositivo.ram" placeholder="RAM" minlength="8" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-server" aria-hidden="true"></i>
-						</span>
-                </div>
-
-                <div class="wrap-input100 validate-input" data-validate="Password is required">
-                    <input class="input100" type="number" name="pass" [(ngModel)]="dispositivo.procesador" placeholder="Procesador" minlength="8" required>
-                    <span class="focus-input100"></span>
-                    <span class="symbol-input100">
-							<i class="fa fa-microchip" aria-hidden="true"></i>
-						</span>
-                </div>
-
-                <div class="container-login100-form-btn">
-                    <button class="login100-form-btn" type="submit" *ngIf="!flg">
-                        Guardar
-                    </button>
-                    <button class="login100-form-btn btn-danger" *ngIf="flg">
-                        Eliminar Datos
-                    </button>
-                </div>
-
-                <div class="text-center p-t-60">
-                    <a class="txt2" (click)="cerrar()">
-							Cerrar Sesion
-							<i class="fa fa-sign-out-alt m-l-5" aria-hidden="true"></i>
-						</a>
-                </div>
-            </form>
-            <div class="login100-pic js-tilt" data-tilt>
-                <img src="../../../assets/images/anigif.gif" alt="IMG">
-            </div>
+        <h3>Monto $1500.00 </h3>
+        <button class="btn btn-success">Nueva Categoria</button>
+        <div class="container">
+            <table class="table">
+                <thead class="thead-dark">
+                    <tr>
+                        <th scope="col" style="width: 5%;">#</th>
+                        <th scope="col" style="width: 75%;">Categoria</th>
+                        <th scope="col" style="width: 20%;">Acciones</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Comida</td>
+                        <td>
+                            <button class="btn btn-success btn-sm"> Agregar</button>
+                            <button class="btn btn-danger btn-sm"> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">2</th>
+                        <td>Transporte</td>
+                        <td>
+                            <button class="btn btn-success btn-sm"> Agregar</button>
+                            <button class="btn btn-danger btn-sm"> Eliminar</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th scope="row">3</th>
+                        <td>Acio</td>
+                        <td>
+                            <button class="btn btn-success btn-sm"> Agregar</button>
+                            <button class="btn btn-danger btn-sm"> Eliminar</button>
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
+
     </div>
 </div>
