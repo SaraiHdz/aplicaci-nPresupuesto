@@ -7,6 +7,7 @@ import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthGuard } from './guard/auth.guard';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
+import { ConfComponent } from './pages/conf/conf.component';
 
 
 const routes: Routes = [
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'login' , component: LoginComponent},
   { path: 'registro' , component: RegistroComponent},
   { path: 'movimiento' , component: MovimientosComponent},
+  { path: 'conf' , component:ConfComponent},
   { path: '**' , redirectTo: 'login' }
 ];
 

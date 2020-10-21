@@ -10,6 +10,7 @@ import { HomeComponent } from './pages/home/home.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
+import { ConfComponent } from './pages/conf/conf.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import { MovimientosComponent } from './pages/movimientos/movimientos.component'
     RegistroComponent,
     LoginComponent,
     HomeComponent,
-    MovimientosComponent
+    MovimientosComponent,
+    ConfComponent
   ],
   imports: [
     BrowserModule,
