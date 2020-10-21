@@ -11,6 +11,7 @@ import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 import { ConfComponent } from './pages/conf/conf.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 @NgModule({
   declarations: [
@@ -19,7 +20,8 @@ import { ConfComponent } from './pages/conf/conf.component';
     LoginComponent,
     HomeComponent,
     MovimientosComponent,
-    ConfComponent
+    ConfComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,

@@ -8,6 +8,7 @@ import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthGuard } from './guard/auth.guard';
 import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 import { ConfComponent } from './pages/conf/conf.component';
+import { DashboardComponent } from './pages/dashboard/dashboard.component';
 
 
 const routes: Routes = [
@@ -16,6 +17,7 @@ const routes: Routes = [
   { path: 'registro' , component: RegistroComponent},
   { path: 'movimiento' , component: MovimientosComponent},
   { path: 'conf' , component:ConfComponent},
+  { path: 'dashboard' , component: DashboardComponent},
   { path: '**' , redirectTo: 'login' }
 ];
 
