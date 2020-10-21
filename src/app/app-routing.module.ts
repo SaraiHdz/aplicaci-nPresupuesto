@@ -6,12 +6,14 @@ import { HomeComponent } from './pages/home/home.component';
 import { LoginComponent } from './pages/login/login.component';
 import { RegistroComponent } from './pages/registro/registro.component';
 import { AuthGuard } from './guard/auth.guard';
+import { MovimientosComponent } from './pages/movimientos/movimientos.component';
 
 
 const routes: Routes = [
   { path: 'home' , component: HomeComponent, canActivate: [AuthGuard]},
   { path: 'login' , component: LoginComponent},
   { path: 'registro' , component: RegistroComponent},
+  { path: 'movimiento' , component: MovimientosComponent},
   { path: '**' , redirectTo: 'login' }
 ];
 
