@@ -10,7 +10,6 @@ export class ConfComponent implements OnInit {
   constructor() { }
 
   ngOnInit(): void {
-    
   }
 
 }
